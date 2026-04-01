@@ -1,0 +1,58 @@
+{
+  "creators": [
+    {
+      "id": "yurii",
+      "name": "Yurii Rebryk",
+      "initials": "YR",
+      "title": "Founder & CEO, Fluently AI",
+      "bio": "YC W24 · Ex-Google · Ex-NVIDIA · Forbes 30u30",
+      "followers": 129126,
+      "followersDisplay": "129K",
+      "estimatedMonthlyImpressions": 2500000,
+      "linkedin": "https://www.linkedin.com/in/yurii-rebryk/",
+      "pricePerPost": 4500,
+      "campaigns": [
+        {"brand": "Framer", "post": 1, "impressions": 529582},
+        {"brand": "Framer", "post": 2, "impressions": 18783}
+      ]
+    },
+    {
+      "id": "stanislav",
+      "name": "Stanislav Beliaev",
+      "initials": "SB",
+      "title": "Co-Founder & CTO, GetFluently.App",
+      "bio": "YC W24 · ex-NVIDIA",
+      "followers": 72177,
+      "followersDisplay": "72K",
+      "linkedin": "https://www.linkedin.com/in/stanislav-beliaev/",
+      "pricePerPost": 3500,
+      "campaigns": []
+    },
+    {
+      "id": "nikolai",
+      "name": "Nikolai Golos",
+      "initials": "NG",
+      "title": "Product & Growth, Fluently AI",
+      "bio": "YC W24",
+      "followers": 38926,
+      "followersDisplay": "39K",
+      "linkedin": "https://www.linkedin.com/in/nigolos/",
+      "pricePerPost": 2000,
+      "campaigns": [
+        {"brand": "Rork", "post": 1, "impressions": 115424},
+        {"brand": "Rork", "post": 2, "impressions": 36187}
+      ]
+    }
+  ],
+  "network": {
+    "combinedFollowers": 240229,
+    "combinedFollowersDisplay": "240K+",
+    "monthlyImpressions": 5000000,
+    "monthlyImpressionsDisplay": "5M+",
+    "cSuiteAudiencePercent": 21,
+    "topAudiences": ["San Francisco", "London", "New York City"],
+    "networkBundlePrice": 8000,
+    "singlePostRange": "$2,000 – $4,500",
+    "cpmPrice": 45
+  }
+}

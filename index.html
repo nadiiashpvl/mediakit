@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediaKit — LinkedIn Creator Network</title>
+  <link rel="stylesheet" href="assets/theme.css">
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="pageLoader">
+  <div class="page-loader-spinner"></div>
+  <div class="page-loader-text">Loading media kit…</div>
+</div>
+
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-kicker">MediaKit</div>
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" id="nav00" onclick="setPage('cover')">
+          <span class="nav-num">00</span><span class="nav-label">Cover</span>
+        </button>
+        <button class="nav-btn" id="nav01" onclick="setPage('overview')">
+          <span class="nav-num">01</span><span class="nav-label">Overview</span>
+        </button>
+        <button class="nav-btn" id="nav02" onclick="setPage('reach')">
+          <span class="nav-num">02</span><span class="nav-label">Combined Reach</span>
+        </button>
+        <button class="nav-btn" id="nav03" onclick="setPage('yurii')">
+          <span class="nav-num">03</span><span class="nav-label">Yurii Rebryk</span>
+        </button>
+        <button class="nav-btn" id="nav04" onclick="setPage('stanislav')">
+          <span class="nav-num">04</span><span class="nav-label">Stanislav Beliaev</span>
+        </button>
+        <button class="nav-btn" id="nav05" onclick="setPage('nikolai')">
+          <span class="nav-num">05</span><span class="nav-label">Nikolai Golos</span>
+        </button>
+        <button class="nav-btn" id="nav06" onclick="setPage('audience')">
+          <span class="nav-num">06</span><span class="nav-label">Audience</span>
+        </button>
+        <button class="nav-btn" id="nav07" onclick="setPage('results')">
+          <span class="nav-num">07</span><span class="nav-label">Results</span>
+        </button>
+        <button class="nav-btn" id="nav08" onclick="setPage('pricing')">
+          <span class="nav-num">08</span><span class="nav-label">Pricing</span>
+        </button>
+        <button class="nav-btn" id="nav09" onclick="setPage('contact')">
+          <span class="nav-num">09</span><span class="nav-label">Book a Call</span>
+        </button>
+      </nav>
+    </div>
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-name">MediaKit</div>
+      <div class="sidebar-footer-copy">LinkedIn Creator Network · B2B Startups · 2026</div>
+    </div>
+  </aside>
+
+  <!-- Page Stack -->
+  <main class="page-stack">
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 00 — COVER
+    ═══════════════════════════════════════════ -->
+    <section class="page active" id="page-cover">
+      <div class="intro-wrap">
+        <div class="intro-avatars">
+          <div class="intro-avatar">YR</div>
+          <div class="intro-avatar">SB</div>
+          <div class="intro-avatar">NG</div>
+        </div>
+        <h1 class="intro-title">LinkedIn Creator Network<br>for <span>B2B Startups</span></h1>
+        <p class="intro-sub">Three YC-backed founders. One high-trust audience of decision-makers.</p>
+        <div class="intro-metrics">
+          <div>
+            <div class="intro-metric-val">240K+</div>
+            <div class="intro-metric-lbl">Combined followers</div>
+          </div>
+          <div>
+            <div class="intro-metric-val">5M+</div>
+            <div class="intro-metric-lbl">Monthly impressions</div>
+          </div>
+          <div>
+            <div class="intro-metric-val">21%</div>
+            <div class="intro-metric-lbl">Founders &amp; C-suite</div>
+          </div>
+        </div>
+        <button class="intro-start-btn" onclick="setPage('overview')">Start reading →</button>
+        <div class="intro-copyright">© 2026 MediaKit · LinkedIn Creator Network · Prepared exclusively for brand partners</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 01 — OVERVIEW (TL;DR)
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-overview">
+      <div class="page-header">
+        <div class="badge">TL;DR</div>
+        <h1>What we do</h1>
+        <div class="subtitle">Founder-led LinkedIn marketing for YC-backed startups — organic distribution, high-trust audiences, measurable results.</div>
+      </div>
+
+      <div class="tldr-grid">
+        <!-- Card 01: The Network -->
+        <div class="tldr-card">
+          <div class="tldr-card-num">01</div>
+          <div class="tldr-card-title">The network</div>
+          <div class="tldr-card-sub">Three YC-backed founders with combined reach across SF, London, and NYC</div>
+          <div class="tldr-metrics-grid">
+            <div class="tldr-metric-cell">
+              <div class="tldr-metric-val">240K+</div>
+              <div class="tldr-metric-lbl">Combined<br>followers</div>
+            </div>
+            <div class="tldr-metric-divider"></div>
+            <div class="tldr-metric-cell">
+              <div class="tldr-metric-val">5M+</div>
+              <div class="tldr-metric-lbl">Monthly<br>impressions</div>
+            </div>
+            <div class="tldr-metric-divider"></div>
+            <div class="tldr-metric-cell">
+              <div class="tldr-metric-val">21%</div>
+              <div class="tldr-metric-lbl">Founders &amp;<br>C-suite</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 02: Why it works -->
+        <div class="tldr-card">
+          <div class="tldr-card-num">02</div>
+          <div class="tldr-card-title">Why it works</div>
+          <div class="tldr-card-sub">Founder credibility converts. Decision-makers trust other founders — not ads.</div>
+          <div class="tldr-points">
+            <div class="tldr-point">
+              <div class="tldr-point-dot"></div>
+              <div class="tldr-point-text"><strong>YC-backed founders</strong> — built-in credibility with the startup ecosystem</div>
+            </div>
+            <div class="tldr-point">
+              <div class="tldr-point-dot"></div>
+              <div class="tldr-point-text"><strong>Organic distribution</strong> — no paid amplification, pure audience trust</div>
+            </div>
+            <div class="tldr-point">
+              <div class="tldr-point-dot"></div>
+              <div class="tldr-point-text"><strong>2–3%+ CTR</strong> vs LinkedIn Ads' 0.4% — 10× better performance</div>
+            </div>
+            <div class="tldr-point">
+              <div class="tldr-point-dot"></div>
+              <div class="tldr-point-text"><strong>B2B decision-makers</strong> — VCs, startup founders, CMOs, growth leads</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Levers: 3 creators -->
+      <div class="tldr-levers">
+        <div class="tldr-levers-title">Three creators — one ecosystem</div>
+        <div class="tldr-levers-grid">
+          <div class="tldr-lever">
+            <div class="tldr-lever-badge">Creator 01</div>
+            <div class="tldr-lever-name">Yurii Rebryk</div>
+            <div class="tldr-lever-val">129K</div>
+            <div class="tldr-lever-lbl">followers · $4,500/post</div>
+          </div>
+          <div class="tldr-lever">
+            <div class="tldr-lever-badge">Creator 02</div>
+            <div class="tldr-lever-name">Stanislav Beliaev</div>
+            <div class="tldr-lever-val">72K</div>
+            <div class="tldr-lever-lbl">followers · $3,500/post</div>
+          </div>
+          <div class="tldr-lever">
+            <div class="tldr-lever-badge">Creator 03</div>
+            <div class="tldr-lever-name">Nikolai Golos</div>
+            <div class="tldr-lever-val">39K</div>
+            <div class="tldr-lever-lbl">followers · $2,000/post</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 02 — COMBINED REACH
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-reach">
+      <div class="page-header">
+        <div class="badge">Combined</div>
+        <h1>Network reach</h1>
+        <div class="subtitle">Three creators, one addressable audience of B2B decision-makers in SF, London, and NYC.</div>
+      </div>
+
+      <!-- KPI Row -->
+      <div class="kpi-row">
+        <div class="kpi-card">
+          <div class="kpi-label">Combined followers</div>
+          <div class="kpi-value">240K+</div>
+          <div class="kpi-sub">Across 3 creators</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Monthly impressions</div>
+          <div class="kpi-value">5M+</div>
+          <div class="kpi-sub">Organic, no paid boost</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Founders &amp; C-suite</div>
+          <div class="kpi-value" style="color:#e63946">21%</div>
+          <div class="kpi-sub">Of total audience</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-label">Top locations</div>
+          <div class="kpi-value" style="font-size:1rem; line-height:1.4; margin-top:4px;">SF · NYC<br>London</div>
+          <div class="kpi-sub">#1 audience markets</div>
+        </div>
+      </div>
+
+      <!-- Bar Chart -->
+      <div class="section-label">Creator breakdown by followers</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <div class="bar-label">Yurii Rebryk</div>
+          <div class="bar-track">
+            <div class="bar-fill accent" style="width:100%">
+              <span class="bar-inner-label">129,126</span>
+            </div>
+          </div>
+          <div class="bar-val">129K</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Stanislav Beliaev</div>
+          <div class="bar-track">
+            <div class="bar-fill mid" style="width:56%">
+              <span class="bar-inner-label">72,177</span>
+            </div>
+          </div>
+          <div class="bar-val">72K</div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-label">Nikolai Golos</div>
+          <div class="bar-track">
+            <div class="bar-fill low" style="width:30%">
+              <span class="bar-inner-label">38,926</span>
+            </div>
+          </div>
+          <div class="bar-val">39K</div>
+        </div>
+      </div>
+
+      <div class="callout-row" style="margin-top:16px;">
+        <div class="callout-arrow">↑</div>
+        <div class="callout-label">Combined: 240,229 followers · #1 in SF startup ecosystem</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 03 — YURII REBRYK
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-yurii">
+      <div class="page-header">
+        <div class="badge">Creator 01</div>
+        <h1>Yurii Rebryk</h1>
+        <div class="subtitle">Founder &amp; CEO, Fluently AI · YC W24 · Ex-Google · Ex-NVIDIA · Forbes 30u30</div>
+      </div>
+
+      <div class="creator-hero">
+        <div>
+          <div class="creator-avatar-wrap">
+            <div class="creator-avatar">YR</div>
+            <div>
+              <div class="creator-name">Yurii Rebryk</div>
+              <div class="creator-title">Founder &amp; CEO, Fluently AI</div>
+            </div>
+          </div>
+          <div class="creator-bio-tags">
+            <span class="creator-tag red">YC W24</span>
+            <span class="creator-tag">Ex-Google</span>
+            <span class="creator-tag">Ex-NVIDIA</span>
+            <span class="creator-tag red">Forbes 30u30</span>
+          </div>
+        </div>
+        <div class="creator-metrics">
+          <div class="creator-metric-card accent-border">
+            <div class="creator-metric-val">129K</div>
+            <div class="creator-metric-lbl">LinkedIn followers</div>
+          </div>
+          <div class="creator-metric-card">
+            <div class="creator-metric-val">~2.5M</div>
+            <div class="creator-metric-lbl">Est. monthly impressions</div>
+          </div>
+          <div class="creator-metric-card">
+            <div class="creator-metric-val">$4,500</div>
+            <div class="creator-metric-lbl">Per dedicated post</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-row">
+        <div class="callout-arrow">↑</div>
+        <div class="callout-label">Largest creator in network · 21% Founders &amp; C-suite audience</div>
+      </div>
+      <div class="highlight-line"></div>
+
+      <!-- Campaign Results -->
+      <div class="section-label">Campaign results — Framer</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-brand">Framer × Yurii Rebryk</div>
+          <div style="display:flex;align-items:baseline;gap:4px;">
+            <span class="result-arrow">↑</span>
+            <div class="result-impressions">529,582</div>
+          </div>
+          <div class="result-label">impressions · Post 1</div>
+          <div class="callout-row" style="margin-top:10px;">
+            <div class="callout-label">Top performing post</div>
+          </div>
+        </div>
+        <div class="result-card">
+          <div class="result-brand">Framer × Yurii Rebryk</div>
+          <div class="result-impressions">18,783</div>
+          <div class="result-label">impressions · Post 2</div>
+        </div>
+      </div>
+
+      <!-- Audience Placeholder -->
+      <div class="section-label">Audience breakdown</div>
+      <div class="img-placeholder">
+        <div class="img-placeholder-icon">📊</div>
+        <div class="img-placeholder-label">Audience Screenshot — Yurii</div>
+        <div style="font-size:0.72rem;color:#444;margin-top:4px;">Replace with LinkedIn audience analytics screenshot</div>
+      </div>
+
+      <div class="audience-stats" style="margin-top:16px;">
+        <div class="audience-stat">
+          <div class="audience-stat-val red">21%</div>
+          <div class="audience-stat-lbl">Founders &amp; C-suite</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val">SF · NYC</div>
+          <div class="audience-stat-lbl">Top US markets</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val">London</div>
+          <div class="audience-stat-lbl">Top EU market</div>
+        </div>
+      </div>
+      <div class="highlight-line"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 04 — STANISLAV BELIAEV
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-stanislav">
+      <div class="page-header">
+        <div class="badge">Creator 02</div>
+        <h1>Stanislav Beliaev</h1>
+        <div class="subtitle">Co-Founder &amp; CTO, GetFluently.App · YC W24 · ex-NVIDIA</div>
+      </div>
+
+      <div class="creator-hero">
+        <div>
+          <div class="creator-avatar-wrap">
+            <div class="creator-avatar">SB</div>
+            <div>
+              <div class="creator-name">Stanislav Beliaev</div>
+              <div class="creator-title">Co-Founder &amp; CTO, GetFluently.App</div>
+            </div>
+          </div>
+          <div class="creator-bio-tags">
+            <span class="creator-tag red">YC W24</span>
+            <span class="creator-tag">ex-NVIDIA</span>
+          </div>
+        </div>
+        <div class="creator-metrics">
+          <div class="creator-metric-card accent-border">
+            <div class="creator-metric-val">72K</div>
+            <div class="creator-metric-lbl">LinkedIn followers</div>
+          </div>
+          <div class="creator-metric-card">
+            <div class="creator-metric-val">$3,500</div>
+            <div class="creator-metric-lbl">Per dedicated post</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-row">
+        <div class="callout-arrow">↑</div>
+        <div class="callout-label">Technical founder — strong reach with engineering &amp; AI audiences</div>
+      </div>
+      <div class="highlight-line"></div>
+
+      <!-- Audience Placeholder -->
+      <div class="section-label">Audience breakdown</div>
+      <div class="img-placeholder">
+        <div class="img-placeholder-icon">📊</div>
+        <div class="img-placeholder-label">Audience Screenshot — Stanislav</div>
+        <div style="font-size:0.72rem;color:#444;margin-top:4px;">Replace with LinkedIn audience analytics screenshot</div>
+      </div>
+
+      <div class="audience-stats" style="margin-top:16px;">
+        <div class="audience-stat">
+          <div class="audience-stat-val">72K</div>
+          <div class="audience-stat-lbl">Followers</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val red">AI/ML</div>
+          <div class="audience-stat-lbl">Core audience segment</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val">SF · NYC</div>
+          <div class="audience-stat-lbl">Top markets</div>
+        </div>
+      </div>
+      <div class="highlight-line"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 05 — NIKOLAI GOLOS
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-nikolai">
+      <div class="page-header">
+        <div class="badge">Creator 03</div>
+        <h1>Nikolai Golos</h1>
+        <div class="subtitle">Product &amp; Growth, Fluently AI · YC W24</div>
+      </div>
+
+      <div class="creator-hero">
+        <div>
+          <div class="creator-avatar-wrap">
+            <div class="creator-avatar">NG</div>
+            <div>
+              <div class="creator-name">Nikolai Golos</div>
+              <div class="creator-title">Product &amp; Growth, Fluently AI</div>
+            </div>
+          </div>
+          <div class="creator-bio-tags">
+            <span class="creator-tag red">YC W24</span>
+            <span class="creator-tag">LinkedIn Research Lead</span>
+          </div>
+        </div>
+        <div class="creator-metrics">
+          <div class="creator-metric-card accent-border">
+            <div class="creator-metric-val">39K</div>
+            <div class="creator-metric-lbl">LinkedIn followers</div>
+          </div>
+          <div class="creator-metric-card">
+            <div class="creator-metric-val">$2,000</div>
+            <div class="creator-metric-lbl">Per dedicated post</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout-row">
+        <div class="callout-arrow">↑</div>
+        <div class="callout-label">Growth &amp; product audience · highest engagement rate in network</div>
+      </div>
+      <div class="highlight-line"></div>
+
+      <!-- Campaign Results -->
+      <div class="section-label">Campaign results — Rork</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-brand">Rork × Nikolai Golos</div>
+          <div style="display:flex;align-items:baseline;gap:4px;">
+            <span class="result-arrow">↑</span>
+            <div class="result-impressions">115,424</div>
+          </div>
+          <div class="result-label">impressions · Post 1</div>
+        </div>
+        <div class="result-card">
+          <div class="result-brand">Rork × Nikolai Golos</div>
+          <div class="result-impressions">36,187</div>
+          <div class="result-label">impressions · Post 2</div>
+        </div>
+      </div>
+
+      <!-- Audience Placeholder -->
+      <div class="section-label">Audience breakdown</div>
+      <div class="img-placeholder">
+        <div class="img-placeholder-icon">📊</div>
+        <div class="img-placeholder-label">Audience Screenshot — Nikolai</div>
+        <div style="font-size:0.72rem;color:#444;margin-top:4px;">Replace with LinkedIn audience analytics screenshot</div>
+      </div>
+      <div class="highlight-line"></div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 06 — AUDIENCE
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-audience">
+      <div class="page-header">
+        <div class="badge">Audience</div>
+        <h1>Who sees your content</h1>
+        <div class="subtitle">B2B decision-makers in the world's top startup ecosystems — the exact audience your brand needs.</div>
+      </div>
+
+      <div class="audience-stats">
+        <div class="audience-stat">
+          <div class="audience-stat-val red">21%</div>
+          <div class="audience-stat-lbl">Founders &amp; C-suite</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val">240K+</div>
+          <div class="audience-stat-lbl">Combined reach</div>
+        </div>
+        <div class="audience-stat">
+          <div class="audience-stat-val">SF · NYC · LDN</div>
+          <div class="audience-stat-lbl">#1 audience locations</div>
+        </div>
+      </div>
+
+      <div class="callout-row">
+        <div class="callout-arrow">↑</div>
+        <div class="callout-label">Tier 1 markets — San Francisco, New York City, London</div>
+      </div>
+      <div class="highlight-line"></div>
+
+      <div class="section-label">Audience screenshots — LinkedIn Analytics</div>
+      <div class="audience-grid">
+        <div>
+          <div style="font-size:0.7rem;color:#555;margin-bottom:8px;font-weight:600;">YURII REBRYK · 129K followers</div>
+          <div class="img-placeholder">
+            <div class="img-placeholder-icon">📸</div>
+            <div class="img-placeholder-label">Audience Screenshot<br>Yurii Rebryk</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:#555;margin-bottom:8px;font-weight:600;">STANISLAV BELIAEV · 72K followers</div>
+          <div class="img-placeholder">
+            <div class="img-placeholder-icon">📸</div>
+            <div class="img-placeholder-label">Audience Screenshot<br>Stanislav Beliaev</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-size:0.7rem;color:#555;margin-bottom:8px;font-weight:600;">NIKOLAI GOLOS · 39K followers</div>
+          <div class="img-placeholder">
+            <div class="img-placeholder-icon">📸</div>
+            <div class="img-placeholder-label">Audience Screenshot<br>Nikolai Golos</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background:#141414;border:1px solid #1e1e1e;border-radius:8px;padding:18px 20px;margin-top:20px;">
+        <div class="callout-row" style="margin-bottom:0;">
+          <div class="callout-arrow">→</div>
+          <div style="font-size:0.8rem;color:#aaa;line-height:1.5;">Replace placeholders with actual LinkedIn Analytics screenshots from each creator's dashboard showing <strong style="color:#fff">job titles, seniority levels, industries, and geographic distribution.</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 07 — RESULTS
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-results">
+      <div class="page-header">
+        <div class="badge">Results</div>
+        <h1>Proven campaign performance</h1>
+        <div class="subtitle">Real campaigns, real impressions. No inflated numbers — these are verified LinkedIn analytics.</div>
+      </div>
+
+      <!-- CTR Callout -->
+      <div style="background:rgba(230,57,70,0.06);border:1px solid rgba(230,57,70,0.15);border-radius:10px;padding:20px 24px;margin-bottom:28px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;text-align:center;">
+          <div>
+            <div style="font-size:1.75rem;font-weight:800;color:#e63946;">2–3%+</div>
+            <div style="font-size:0.7rem;color:#666;margin-top:4px;">Our CTR</div>
+          </div>
+          <div>
+            <div style="font-size:1.75rem;font-weight:800;color:#555;">0.4%</div>
+            <div style="font-size:0.7rem;color:#666;margin-top:4px;">LinkedIn Ads avg CTR</div>
+          </div>
+          <div>
+            <div style="font-size:1.75rem;font-weight:800;color:#fff;">~10×</div>
+            <div style="font-size:0.7rem;color:#666;margin-top:4px;">Better performance</div>
+          </div>
+        </div>
+        <div class="callout-row" style="justify-content:center;margin-top:14px;">
+          <div class="callout-arrow">↑</div>
+          <div class="callout-label">Organic reach outperforms LinkedIn Ads at fraction of CPM</div>
+        </div>
+      </div>
+
+      <!-- Framer Campaign -->
+      <div class="section-label">Campaign: Framer × Yurii Rebryk</div>
+      <div class="results-grid" style="margin-bottom:24px;">
+        <div class="result-card">
+          <div class="result-brand">Framer · Post 1</div>
+          <div style="display:flex;align-items:baseline;gap:6px;">
+            <span class="result-arrow" style="font-size:1.3rem;">↑</span>
+            <div class="result-impressions">529,582</div>
+          </div>
+          <div class="result-label">total impressions</div>
+          <div class="callout-row" style="margin-top:12px;">
+            <div class="callout-label">Top post in network history</div>
+          </div>
+          <div class="highlight-line"></div>
+        </div>
+        <div class="result-card">
+          <div class="result-brand">Framer · Post 2</div>
+          <div class="result-impressions">18,783</div>
+          <div class="result-label">total impressions</div>
+          <div style="margin-top:12px;font-size:0.75rem;color:#555;">Combined Framer campaign: <strong style="color:#aaa">548,365 impressions</strong></div>
+        </div>
+      </div>
+
+      <!-- Rork Campaign -->
+      <div class="section-label">Campaign: Rork × Nikolai Golos</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-brand">Rork · Post 1</div>
+          <div style="display:flex;align-items:baseline;gap:6px;">
+            <span class="result-arrow" style="font-size:1.3rem;">↑</span>
+            <div class="result-impressions">115,424</div>
+          </div>
+          <div class="result-label">total impressions</div>
+          <div class="highlight-line"></div>
+        </div>
+        <div class="result-card">
+          <div class="result-brand">Rork · Post 2</div>
+          <div class="result-impressions">36,187</div>
+          <div class="result-label">total impressions</div>
+          <div style="margin-top:12px;font-size:0.75rem;color:#555;">Combined Rork campaign: <strong style="color:#aaa">151,611 impressions</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 08 — PRICING
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-pricing">
+      <div class="page-header">
+        <div class="badge">Pricing</div>
+        <h1>Partnership packages</h1>
+        <div class="subtitle">Transparent, performance-driven. Pay for reach that converts — not vanity impressions.</div>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- Package 1: Network Bundle (FEATURED) -->
+        <div class="pricing-card featured">
+          <div class="pricing-tier">Most popular</div>
+          <div class="pricing-name">Network Bundle</div>
+          <div class="pricing-price">$8,000 <span>/ campaign</span></div>
+          <div class="pricing-desc">Full network activation. One post from each creator — maximum reach, maximum trust.</div>
+          <div class="pricing-items">
+            <div class="pricing-item">
+              <div class="pricing-item-dot red"></div>
+              <div>1× Yurii Rebryk post (129K reach) — <strong>$4,500 value</strong></div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot red"></div>
+              <div>1× Stanislav Beliaev post (72K reach) — <strong>$3,500 value</strong></div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot red"></div>
+              <div>1× Nikolai Golos post (39K reach) — <strong>$2,000 value</strong></div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>240K+ combined reach · 3 posts</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>Full campaign brief &amp; content review</div>
+            </div>
+          </div>
+          <div class="pricing-callout">
+            ↑ Save $2,000 vs. buying posts individually
+          </div>
+        </div>
+
+        <!-- Package 2: Single Post -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Flexible</div>
+          <div class="pricing-name">Single Post</div>
+          <div class="pricing-price">$2,000 <span>– $4,500</span></div>
+          <div class="pricing-desc">Pick the creator that fits your audience best. One dedicated post, full creative support.</div>
+          <div class="pricing-items">
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>Yurii Rebryk (129K) — $4,500</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>Stanislav Beliaev (72K) — $3,500</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>Nikolai Golos (39K) — $2,000</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>1 revision round included</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>Performance report post-publish</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package 3: CPM -->
+        <div class="pricing-card">
+          <div class="pricing-tier">Performance</div>
+          <div class="pricing-name">CPM Model</div>
+          <div class="pricing-price">$45 <span>/ 1K impressions</span></div>
+          <div class="pricing-desc">Pay only for impressions delivered. We create and promote until agreed target is reached.</div>
+          <div class="pricing-items">
+            <div class="pricing-item">
+              <div class="pricing-item-dot red"></div>
+              <div>Pay per verified impression</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot red"></div>
+              <div>Works across any creator account</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>LinkedIn Ads: $33–65 CPM · 0.4% CTR</div>
+            </div>
+            <div class="pricing-item">
+              <div class="pricing-item-dot"></div>
+              <div>We deliver: 2–3%+ CTR</div>
+            </div>
+          </div>
+          <div class="pricing-callout">
+            ↑ ~10× better CTR than LinkedIn Ads
+          </div>
+        </div>
+
+      </div>
+
+      <div style="background:#141414;border:1px solid #1e1e1e;border-radius:8px;padding:16px 20px;margin-top:24px;display:flex;align-items:center;gap:12px;">
+        <div class="callout-arrow" style="font-size:1.2rem;">→</div>
+        <div style="font-size:0.8rem;color:#666;">All packages include: content brief, creator review round, post scheduling, and a post-campaign impressions report. Minimum 7-day lead time.</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         PAGE 09 — BOOK A CALL
+    ═══════════════════════════════════════════ -->
+    <section class="page" id="page-contact">
+      <div class="cta-wrap">
+        <div class="badge">Contact</div>
+        <div class="cta-title">Let's talk<br>partnerships</div>
+        <p class="cta-sub">Interested in working with our creator network? We typically book 2 weeks out — reach out early.</p>
+        <div class="cta-buttons">
+          <a href="mailto:contactnadiiashpvl@gmail.com" class="cta-btn cta-btn-primary">Send an email →</a>
+          <a href="https://www.linkedin.com/in/nadiia-shapovalova-25653628a" target="_blank" rel="noopener" class="cta-btn cta-btn-secondary">LinkedIn ↗</a>
+        </div>
+        <div class="cta-contact" style="margin-top:24px;">
+          <div class="cta-contact-label">Direct email</div>
+          <div class="cta-contact-val">contactnadiiashpvl@gmail.com</div>
+        </div>
+        <div class="intro-copyright" style="margin-top:32px;">© 2026 MediaKit · LinkedIn Creator Network · All rights reserved</div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+  // Page navigation
+  const pageMap = {
+    'cover':     { page: 'page-cover',     nav: 'nav00' },
+    'overview':  { page: 'page-overview',  nav: 'nav01' },
+    'reach':     { page: 'page-reach',     nav: 'nav02' },
+    'yurii':     { page: 'page-yurii',     nav: 'nav03' },
+    'stanislav': { page: 'page-stanislav', nav: 'nav04' },
+    'nikolai':   { page: 'page-nikolai',   nav: 'nav05' },
+    'audience':  { page: 'page-audience',  nav: 'nav06' },
+    'results':   { page: 'page-results',   nav: 'nav07' },
+    'pricing':   { page: 'page-pricing',   nav: 'nav08' },
+    'contact':   { page: 'page-contact',   nav: 'nav09' },
+  };
+
+  let currentPage = 'cover';
+
+  function setPage(key) {
+    if (!pageMap[key]) return;
+    // Hide current
+    const prev = pageMap[currentPage];
+    document.getElementById(prev.page).classList.remove('active');
+    document.getElementById(prev.nav).classList.remove('active');
+    // Show new
+    currentPage = key;
+    const curr = pageMap[key];
+    document.getElementById(curr.page).classList.add('active');
+    document.getElementById(curr.nav).classList.add('active');
+    // Scroll page to top
+    document.getElementById(curr.page).scrollTop = 0;
+    // Update hash
+    window.location.hash = key;
+  }
+
+  // Handle hash on load
+  window.addEventListener('load', () => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && pageMap[hash]) setPage(hash);
+    // Remove loader
+    setTimeout(() => {
+      document.getElementById('pageLoader').classList.add('done');
+    }, 600);
+  });
+
+  // Keyboard navigation
+  const pageKeys = Object.keys(pageMap);
+  document.addEventListener('keydown', (e) => {
+    const idx = pageKeys.indexOf(currentPage);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+      if (idx < pageKeys.length - 1) setPage(pageKeys[idx + 1]);
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+      if (idx > 0) setPage(pageKeys[idx - 1]);
+    }
+  });
+</script>
+
+</body>
+</html>
