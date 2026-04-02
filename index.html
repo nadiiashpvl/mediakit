@@ -737,6 +737,46 @@
   </main>
 </div>
 
+<!-- Mobile bottom nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-btn active" id="mnav00" onclick="setPage('cover')">
+    <span class="mobile-nav-num">00</span>
+    <span class="mobile-nav-label">Cover</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav01" onclick="setPage('overview')">
+    <span class="mobile-nav-num">01</span>
+    <span class="mobile-nav-label">Overview</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav02" onclick="setPage('reach')">
+    <span class="mobile-nav-num">02</span>
+    <span class="mobile-nav-label">Reach</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav03" onclick="setPage('yurii')">
+    <span class="mobile-nav-num">03</span>
+    <span class="mobile-nav-label">Yurii</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav04" onclick="setPage('stanislav')">
+    <span class="mobile-nav-num">04</span>
+    <span class="mobile-nav-label">Stanislav</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav05" onclick="setPage('nikolai')">
+    <span class="mobile-nav-num">05</span>
+    <span class="mobile-nav-label">Nikolai</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav06" onclick="setPage('results')">
+    <span class="mobile-nav-num">06</span>
+    <span class="mobile-nav-label">Results</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav07" onclick="setPage('pricing')">
+    <span class="mobile-nav-num">07</span>
+    <span class="mobile-nav-label">Pricing</span>
+  </button>
+  <button class="mobile-nav-btn" id="mnav08" onclick="setPage('contact')">
+    <span class="mobile-nav-num">08</span>
+    <span class="mobile-nav-label">Contact</span>
+  </button>
+</nav>
+
 <script>
   // Page navigation
   const pageMap = {
@@ -760,11 +800,19 @@
     const prev = pageMap[currentPage];
     document.getElementById(prev.page).classList.remove('active');
     document.getElementById(prev.nav).classList.remove('active');
+    const prevMnav = document.getElementById('m' + prev.nav);
+    if (prevMnav) prevMnav.classList.remove('active');
     // Show new
     currentPage = key;
     const curr = pageMap[key];
     document.getElementById(curr.page).classList.add('active');
     document.getElementById(curr.nav).classList.add('active');
+    const currMnav = document.getElementById('m' + curr.nav);
+    if (currMnav) {
+      currMnav.classList.add('active');
+      // Scroll mobile nav to show active button
+      currMnav.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
     // Scroll page to top
     document.getElementById(curr.page).scrollTop = 0;
     // Update hash
