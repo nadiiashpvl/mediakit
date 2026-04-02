@@ -589,3 +589,19 @@ a:hover { opacity: 0.8; }
 }
   .page { padding: 20px 16px; }
 }
+
+/* ── Creator nav cards (Overview page) ── */
+.creator-nav-card {
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+}
+.creator-nav-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--color-primary-muted);
+}
+
+/* ── Section label spacing ── */
+.section-label {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
