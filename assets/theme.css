@@ -76,7 +76,7 @@ a:hover { opacity: 0.8; }
 
 /* ── Sidebar ── */
 .sidebar {
-  width: 200px; min-width: 200px;
+  width: 188px; min-width: 188px;
   background: var(--color-surface);
   border-right: 1px solid var(--color-border);
   display: flex; flex-direction: column;
@@ -138,7 +138,7 @@ a:hover { opacity: 0.8; }
 
 .page {
   display: none; position: absolute; inset: 0;
-  overflow-y: auto; padding: 36px 44px;
+  overflow-y: auto; padding: 32px 48px 48px;
   scrollbar-width: thin; scrollbar-color: var(--color-border) transparent;
   animation: fadeIn 0.2s ease;
 }
@@ -149,7 +149,7 @@ a:hover { opacity: 0.8; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
 
 /* ── Page Header ── */
-.page-header { margin-bottom: 28px; }
+.page-header { margin-bottom: 24px; }
 .page-header-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 
 .badge {
@@ -158,7 +158,7 @@ a:hover { opacity: 0.8; }
   font-size: 0.6rem; font-weight: 700;
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--color-primary); background: var(--color-primary-soft);
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .badge-blue { color: var(--color-accent-blue); background: var(--color-accent-blue-soft); }
 .badge-green { color: var(--color-accent-green); background: var(--color-accent-green-soft); }
@@ -174,7 +174,7 @@ a:hover { opacity: 0.8; }
 .intro-wrap {
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
-  min-height: 80vh; text-align: center; gap: 20px;
+  min-height: 80vh; text-align: center; gap: 0;
 }
 
 .intro-avatars { display: flex; gap: 10px; margin-bottom: 4px; }
@@ -210,14 +210,14 @@ a:hover { opacity: 0.8; }
 }
 
 .intro-metrics {
-  display: flex; gap: 40px; margin: 8px 0;
-  padding: 18px 32px;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
+  display: flex; gap: 0; margin: 8px 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
-.intro-metric-val { font-size: 1.75rem; font-weight: 800; color: var(--color-text); }
+.intro-metric-val { font-size: 2rem; font-weight: 800; color: var(--color-text); }
 .intro-metric-lbl { font-size: 0.65rem; color: var(--color-text-tertiary); margin-top: 2px; }
 
 .intro-start-btn {
@@ -233,11 +233,11 @@ a:hover { opacity: 0.8; }
 .intro-copyright { font-size: 0.65rem; color: var(--color-text-tertiary); margin-top: 8px; }
 
 /* ── TL;DR Grid ── */
-.tldr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+.tldr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 20px; }
 
 .tldr-card {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 18px;
+  border-radius: var(--radius-md); padding: 20px 22px;
   box-shadow: var(--shadow-sm);
 }
 .tldr-card-num { font-size: 0.6rem; font-weight: 700; color: var(--color-text-tertiary); letter-spacing: 0.1em; margin-bottom: 8px; }
@@ -262,7 +262,7 @@ a:hover { opacity: 0.8; }
 
 .tldr-lever {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 14px 12px; text-align: center;
+  border-radius: var(--radius-md); padding: 16px 12px; text-align: center;
   box-shadow: var(--shadow-sm);
 }
 .tldr-lever-badge { font-size: 0.55rem; font-weight: 700; color: var(--color-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
@@ -271,10 +271,10 @@ a:hover { opacity: 0.8; }
 .tldr-lever-lbl { font-size: 0.6rem; color: var(--color-text-tertiary); }
 
 /* ── KPI Row ── */
-.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 28px; }
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 24px; }
 .kpi-card {
   background: var(--color-surface); border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-md); padding: 14px 12px;
+  border-radius: var(--radius-md); padding: 16px 14px;
   box-shadow: var(--shadow-sm);
 }
 .kpi-label { font-size: 0.65rem; font-weight: 600; color: var(--color-text-tertiary); margin-bottom: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -282,7 +282,7 @@ a:hover { opacity: 0.8; }
 .kpi-sub { font-size: 0.65rem; color: var(--color-text-secondary); margin-top: 4px; }
 
 /* ── Bar Chart ── */
-.bar-chart { display: flex; flex-direction: column; gap: 8px; }
+.bar-chart { display: flex; flex-direction: column; gap: 6px; }
 .bar-row { display: grid; grid-template-columns: 130px 1fr 70px; gap: 10px; align-items: center; }
 .bar-label { font-size: 0.8rem; color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bar-track { background: var(--color-border-light); border-radius: 4px; height: 24px; overflow: hidden; }
@@ -297,8 +297,8 @@ a:hover { opacity: 0.8; }
 /* ── Creator Page ── */
 .creator-hero {
   display: grid; grid-template-columns: 1fr auto;
-  gap: 24px; align-items: start;
-  padding: 22px 24px; background: var(--color-surface);
+  gap: 20px; align-items: start;
+  padding: 20px 24px 20px 20px; background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   margin-bottom: 16px;
@@ -341,11 +341,11 @@ a:hover { opacity: 0.8; }
 .highlight-line { height: 2px; background: var(--color-primary); border-radius: 1px; margin: 4px 0 12px; opacity: 0.5; }
 
 /* ── Campaign Results ── */
-.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+.results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 24px; }
 
 .result-card {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 20px; position: relative; overflow: hidden;
+  border-radius: var(--radius-md); padding: 20px 24px; position: relative; overflow: hidden;
   box-shadow: var(--shadow-sm); transition: box-shadow 0.2s, transform 0.2s;
 }
 .result-card.clickable { cursor: pointer; text-decoration: none; display: block; color: inherit; }
@@ -405,11 +405,11 @@ a:hover { opacity: 0.8; }
 .tier1-sub { font-size: 0.75rem; color: var(--color-text-secondary); margin-top: 2px; }
 
 /* ── Pricing ── */
-.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 760px; }
+.pricing-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; max-width: 100%; }
 
 .pricing-card {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 20px;
+  border-radius: var(--radius-md); padding: 28px 32px;
   box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
 }
 .pricing-card.featured {
@@ -424,9 +424,9 @@ a:hover { opacity: 0.8; }
 
 .pricing-tier { font-size: 0.65rem; font-weight: 700; color: var(--color-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
 .pricing-name { font-size: 1.1rem; font-weight: 700; color: var(--color-text); margin-bottom: 4px; }
-.pricing-price { font-size: 1.75rem; font-weight: 800; color: var(--color-text); margin: 8px 0 4px; }
+.pricing-price { font-size: 2rem; font-weight: 800; color: var(--color-text); margin: 12px 0 6px; }
 .pricing-price span { font-size: 0.9rem; font-weight: 500; color: var(--color-text-secondary); }
-.pricing-desc { font-size: 0.8rem; color: var(--color-text-secondary); margin-bottom: 20px; line-height: 1.5; }
+.pricing-desc { font-size: 0.825rem; color: var(--color-text-secondary); margin-bottom: 20px; line-height: 1.6; }
 
 .pricing-items { display: flex; flex-direction: column; gap: 8px; }
 .pricing-item { display: flex; gap: 10px; align-items: flex-start; font-size: 0.8rem; color: var(--color-text-secondary); }
@@ -605,3 +605,38 @@ a:hover { opacity: 0.8; }
   margin-top: 28px;
   margin-bottom: 12px;
 }
+
+/* ── Cover element spacing (Gorbunov: controlled rhythm) ── */
+.intro-avatars { margin-bottom: 20px; }
+.intro-eyebrow { margin-bottom: 8px; }
+.intro-title { margin-bottom: 24px; }
+.intro-metrics { margin-bottom: 28px; }
+.intro-start-btn { margin-bottom: 0; }
+.intro-copyright { margin-top: 24px; }
+
+/* ── Metric separators on cover ── */
+.intro-metrics-inner {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+}
+.intro-metric-block {
+  padding: 0 32px;
+  border-right: 1px solid var(--color-border);
+}
+.intro-metric-block:first-child { padding-left: 0; }
+.intro-metric-block:last-child { padding-right: 0; border-right: none; }
+
+/* ── Reach page bar chart spacing ── */
+.bar-chart { margin-top: 0; }
+
+/* ── Creator name as link ── */
+.creator-name:hover { color: var(--color-primary) !important; }
+
+/* ── Pricing items tighter ── */
+.pricing-items { gap: 10px; }
+.pricing-item { font-size: 0.825rem; }
+
+/* ── Audience stats tighter ── */
+.audience-stats { gap: 8px; margin-top: 12px; margin-bottom: 0; }
+.audience-stat { padding: 12px 16px; }
