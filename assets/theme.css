@@ -241,17 +241,17 @@ a:hover { opacity: 0.8; }
 
 .tldr-card {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 20px 22px;
+  border-radius: var(--radius-md); padding: 24px 26px;
   box-shadow: var(--shadow-sm);
 }
 .tldr-card-num { font-size: 0.6rem; font-weight: 700; color: var(--color-text-tertiary); letter-spacing: 0.1em; margin-bottom: 8px; }
 .tldr-card-title { font-size: 0.95rem; font-weight: 700; line-height: 1.3; margin-bottom: 5px; color: var(--color-text); }
-.tldr-card-sub { font-size: 0.775rem; color: var(--color-text-secondary); line-height: 1.5; margin-bottom: 14px; }
+.tldr-card-sub { font-size: 0.825rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 18px; }
 
 .tldr-metrics-grid { display: flex; gap: 0; align-items: stretch; }
 .tldr-metric-cell { flex: 1; text-align: center; padding: 6px 4px; }
 .tldr-metric-divider { width: 1px; background: var(--color-border); }
-.tldr-metric-val { font-size: 1.35rem; font-weight: 800; color: var(--color-text); }
+.tldr-metric-val { font-size: 1.5rem; font-weight: 800; color: var(--color-text); }
 .tldr-metric-lbl { font-size: 0.65rem; color: var(--color-text-tertiary); margin-top: 3px; line-height: 1.3; }
 
 .tldr-points { display: flex; flex-direction: column; gap: 9px; }
@@ -266,7 +266,7 @@ a:hover { opacity: 0.8; }
 
 .tldr-lever {
   background: var(--color-surface); border: 1px solid var(--color-border);
-  border-radius: var(--radius-md); padding: 16px 12px; text-align: center;
+  border-radius: var(--radius-md); padding: 18px 16px;
   box-shadow: var(--shadow-sm);
 }
 .tldr-lever-badge { font-size: 0.55rem; font-weight: 700; color: var(--color-primary); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
@@ -278,7 +278,7 @@ a:hover { opacity: 0.8; }
 .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 24px; }
 .kpi-card {
   background: var(--color-surface); border: 1px solid var(--color-border-light);
-  border-radius: var(--radius-md); padding: 16px 14px;
+  border-radius: var(--radius-md); padding: 20px 16px;
   box-shadow: var(--shadow-sm);
 }
 .kpi-label { font-size: 0.65rem; font-weight: 600; color: var(--color-text-tertiary); margin-bottom: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -286,15 +286,15 @@ a:hover { opacity: 0.8; }
 .kpi-sub { font-size: 0.65rem; color: var(--color-text-secondary); margin-top: 4px; }
 
 /* ── Bar Chart ── */
-.bar-chart { display: flex; flex-direction: column; gap: 6px; }
+.bar-chart { display: flex; flex-direction: column; gap: 10px; }
 .bar-row { display: grid; grid-template-columns: 130px 1fr 70px; gap: 10px; align-items: center; }
 .bar-label { font-size: 0.8rem; color: var(--color-text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.bar-track { background: var(--color-border-light); border-radius: 4px; height: 24px; overflow: hidden; }
+.bar-track { background: var(--color-border-light); border-radius: 4px; height: 32px; overflow: hidden; }
 .bar-fill { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 10px; transition: width 0.6s ease; }
 .bar-fill.accent { background: var(--grad-primary); }
 .bar-fill.mid { background: linear-gradient(90deg, #A78BFA, #C4B5FD); }
 .bar-fill.low { background: linear-gradient(90deg, #DDD6FE, #EDE9FE); }
-.bar-inner-label { font-size: 0.7rem; font-weight: 600; color: rgba(255,255,255,0.9); }
+.bar-inner-label { font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.95); }
 .bar-fill.low .bar-inner-label { color: var(--color-primary); }
 .bar-val { font-size: 0.875rem; font-weight: 700; color: var(--color-text); text-align: right; }
 

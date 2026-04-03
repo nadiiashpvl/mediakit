@@ -137,29 +137,101 @@
         </div>
       </div>
 
+      <!-- Stat bar divider -->
+      <div style="display:flex;align-items:center;gap:0;margin:20px 0;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:12px 0;">
+        <div style="flex:1;text-align:center;">
+          <span style="font-size:0.9rem;font-weight:800;color:var(--color-text);">100M+</span>
+          <span style="font-size:0.75rem;color:var(--color-text-secondary);margin-left:5px;">organic views</span>
+        </div>
+        <div style="width:1px;background:var(--color-border);height:20px;"></div>
+        <div style="flex:1;text-align:center;">
+          <span style="font-size:0.9rem;font-weight:800;color:var(--color-text);">2,000+</span>
+          <span style="font-size:0.75rem;color:var(--color-text-secondary);margin-left:5px;">avg engagements / post</span>
+        </div>
+        <div style="width:1px;background:var(--color-border);height:20px;"></div>
+        <div style="flex:1;text-align:center;">
+          <span style="font-size:0.9rem;font-weight:800;color:var(--color-primary);">50%+</span>
+          <span style="font-size:0.75rem;color:var(--color-text-secondary);margin-left:5px;">tech professionals</span>
+        </div>
+      </div>
+
       <div class="tldr-levers">
         <div class="tldr-levers-title">Meet the creators</div>
         <div class="tldr-levers-grid">
-          <div class="tldr-lever creator-nav-card" onclick="setPage('yurii')" style="cursor:pointer;">
-            <img src="assets/photo-yurii.jpg" style="width:40px;height:40px;border-radius:50%;object-fit:cover;margin-bottom:8px;border:2px solid var(--color-primary-muted);">
-            <div class="tldr-lever-name">Yurii Rebryk</div>
-            <div class="tldr-lever-val">129K</div>
-            <div class="tldr-lever-lbl">followers · 27.3M impressions/yr</div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:6px;font-weight:600;">View profile →</div>
+          <div class="tldr-lever creator-nav-card" onclick="setPage('yurii')" style="cursor:pointer;text-align:left;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+              <img src="assets/photo-yurii.jpg" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--color-primary-muted);flex-shrink:0;">
+              <div>
+                <div class="tldr-lever-name" style="text-align:left;">Yurii Rebryk</div>
+                <div style="font-size:0.7rem;color:var(--color-text-secondary);margin-top:2px;">Founder & CEO, Fluently AI</div>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding-top:10px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Followers</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">129K</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Impressions/yr</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">27.3M</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Top audience</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-primary);">26% Senior</span>
+              </div>
+              <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · Ex-Google · Ex-NVIDIA · Forbes 30u30</div>
+            </div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
           </div>
-          <div class="tldr-lever creator-nav-card" onclick="setPage('stanislav')" style="cursor:pointer;">
-            <img src="assets/photo-stanislav.jpg" style="width:40px;height:40px;border-radius:50%;object-fit:cover;margin-bottom:8px;border:2px solid var(--color-primary-muted);">
-            <div class="tldr-lever-name">Stanislav Beliaev</div>
-            <div class="tldr-lever-val">72K</div>
-            <div class="tldr-lever-lbl">followers · 24.6M impressions/yr</div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:6px;font-weight:600;">View profile →</div>
+          <div class="tldr-lever creator-nav-card" onclick="setPage('stanislav')" style="cursor:pointer;text-align:left;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+              <img src="assets/photo-stanislav.jpg" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--color-primary-muted);flex-shrink:0;">
+              <div>
+                <div class="tldr-lever-name" style="text-align:left;">Stanislav Beliaev</div>
+                <div style="font-size:0.7rem;color:var(--color-text-secondary);margin-top:2px;">Co-Founder & CTO, Fluently</div>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding-top:10px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Followers</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">72K</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Impressions/yr</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">24.6M</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Top audience</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-primary);">30% Senior</span>
+              </div>
+              <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · ex-NVIDIA · Eng & AI audience</div>
+            </div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
           </div>
-          <div class="tldr-lever creator-nav-card" onclick="setPage('nikolai')" style="cursor:pointer;">
-            <img src="assets/photo-nikolai.jpg" style="width:40px;height:40px;border-radius:50%;object-fit:cover;margin-bottom:8px;border:2px solid var(--color-primary-muted);">
-            <div class="tldr-lever-name">Nikolai Golos</div>
-            <div class="tldr-lever-val">39K</div>
-            <div class="tldr-lever-lbl">followers · 7.7M impressions/yr</div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:6px;font-weight:600;">View profile →</div>
+          <div class="tldr-lever creator-nav-card" onclick="setPage('nikolai')" style="cursor:pointer;text-align:left;">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+              <img src="assets/photo-nikolai.jpg" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--color-primary-muted);flex-shrink:0;">
+              <div>
+                <div class="tldr-lever-name" style="text-align:left;">Nikolai Golos</div>
+                <div style="font-size:0.7rem;color:var(--color-text-secondary);margin-top:2px;">Product & Growth, Fluently AI</div>
+              </div>
+            </div>
+            <div style="border-top:1px solid var(--color-border);padding-top:10px;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Followers</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">39K</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Impressions/yr</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-text);">7.7M ▲97%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;margin-bottom:10px;">
+                <span style="font-size:0.65rem;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;">Top audience</span>
+                <span style="font-size:0.75rem;font-weight:700;color:var(--color-primary);">32% Senior</span>
+              </div>
+              <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · Growth & product audience</div>
+            </div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
           </div>
         </div>
       </div>
@@ -234,6 +306,95 @@
       <div class="callout-row" style="margin-top:16px;">
         <div class="callout-arrow">↑</div>
         <div class="callout-label">Combined: 240,229 followers · #1 in SF startup ecosystem</div>
+      </div>
+
+      <!-- Audience composition — fills the bottom half with high-value data -->
+      <div style="margin-top:28px;border-top:1px solid var(--color-border);padding-top:20px;">
+        <div style="font-size:0.6rem;font-weight:700;color:var(--color-text-tertiary);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px;">Network audience composition</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+
+          <!-- Seniority -->
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;color:var(--color-text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.06em;">Seniority</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Senior</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:26%;height:100%;background:var(--color-primary);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">26%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Entry</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:22%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">22%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Owner</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:11%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">11%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">CXO</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:8%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">8%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Title -->
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;color:var(--color-text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.06em;">Job title</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Founder</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:10%;height:100%;background:var(--color-primary);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">10%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Engineer</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:7%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">7%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Product</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:5%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">5%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Investor</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:4%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">4%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Industry -->
+          <div>
+            <div style="font-size:0.65rem;font-weight:700;color:var(--color-text-secondary);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.06em;">Industry</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Software</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:18%;height:100%;background:var(--color-primary);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">18%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">IT Services</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:16%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">16%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Tech</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:14%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">14%</div>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;">
+                <div style="width:80px;font-size:0.72rem;color:var(--color-text-secondary);">Finance</div>
+                <div style="flex:1;background:var(--color-border-light);border-radius:3px;height:6px;overflow:hidden;"><div style="width:8%;height:100%;background:var(--color-primary-muted);border-radius:3px;"></div></div>
+                <div style="font-size:0.72rem;font-weight:700;color:var(--color-text);width:30px;text-align:right;">8%</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
 
     </section>
