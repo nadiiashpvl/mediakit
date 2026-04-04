@@ -181,13 +181,14 @@ a:hover { opacity: 0.8; }
   padding: 20px 0;
 }
 
-.intro-avatars { display: flex; gap: 10px; margin-bottom: 4px; }
+.intro-avatars { display: flex; justify-content: center; margin-bottom: 4px; }
+.avatar-stack .intro-avatar { position: relative; }
 .intro-avatar {
-  width: 56px; height: 56px; border-radius: 50%;
+  width: 72px; height: 72px; border-radius: 50%;
   background: var(--color-primary-soft);
-  border: 2px solid var(--color-primary-muted);
+  border: 3px solid var(--color-bg);
   display: flex; align-items: center; justify-content: center;
-  font-size: 0.75rem; font-weight: 700; color: var(--color-primary);
+  font-size: 0.875rem; font-weight: 700; color: var(--color-primary);
   overflow: hidden; flex-shrink: 0;
 }
 .intro-avatar img {
@@ -790,3 +791,89 @@ a:hover { opacity: 0.8; }
 .pricing-grid-vertical .pricing-card.featured {
   border-left-width: 3px;
 }
+
+/* ── Cover CTA pill ── */
+.intro-cta-pill {
+  display: inline-flex;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  border-radius: 999px;
+  padding: 4px;
+  transition: all 0.2s ease;
+}
+.intro-cta-pill:hover {
+  background: rgba(124, 58, 237, 0.06);
+  border-color: rgba(124, 58, 237, 0.5);
+}
+.intro-start-btn {
+  border-radius: 999px;
+}
+
+/* ── Fix 2: Cover stats mobile ── */
+@media (max-width: 600px) {
+  .intro-metrics {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .intro-metric-block {
+    padding: 0;
+    border-right: none;
+  }
+  .intro-metric-block:last-child {
+    border-right: none;
+  }
+}
+
+/* ── Fix 4: Overview grid — weighted columns ── */
+.tldr-grid {
+  grid-template-columns: 1fr 1.4fr !important;
+  align-items: stretch;
+}
+.tldr-grid .tldr-card:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* The 21% big stat inside card 01 */
+.tldr-grid .tldr-card:first-child .tldr-stat-hero {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-top: auto;
+}
+@media (max-width: 768px) {
+  .tldr-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ── Fix 6: Numbered card padding ── */
+.tldr-card {
+  padding: 24px !important;
+}
+.tldr-card-num {
+  margin-bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+/* ── Fix 7: Creator card stats responsive ── */
+@media (max-width: 480px) {
+  .creator-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .creator-stats-grid .stat-audience {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Fix 9: Bar track — clean without inner labels ── */
+.bar-fill { padding-left: 0; }
+.bar-fill.accent { justify-content: flex-start; }

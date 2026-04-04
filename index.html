@@ -63,10 +63,10 @@
     ═══════════════════════════════════════════ -->
     <section class="page active" id="page-cover">
       <div class="intro-wrap">
-        <div class="intro-avatars">
-          <div class="intro-avatar"><img src="assets/photo-yurii.jpg" alt="Yurii Rebryk"></div>
-          <div class="intro-avatar"><img src="assets/photo-stanislav.jpg" alt="Stanislav Beliaev"></div>
-          <div class="intro-avatar"><img src="assets/photo-nikolai.jpg" alt="Nikolai Golos"></div>
+        <div class="intro-avatars avatar-stack">
+          <div class="intro-avatar" style="z-index:1;"><img src="assets/photo-yurii.jpg" alt="Yurii Rebryk"></div>
+          <div class="intro-avatar" style="z-index:2;margin-left:-18px;"><img src="assets/photo-stanislav.jpg" alt="Stanislav Beliaev"></div>
+          <div class="intro-avatar" style="z-index:3;margin-left:-18px;"><img src="assets/photo-nikolai.jpg" alt="Nikolai Golos"></div>
         </div>
         <p class="intro-eyebrow">LinkedIn Creator Network</p>
         <h1 class="intro-title">Reach <span class="intro-title-highlight">Tier-1</span><br>B2B Decision Makers</h1>
@@ -84,7 +84,9 @@
             <div class="intro-metric-lbl">Founders &amp; C-suite</div>
           </div>
         </div>
-        <button class="intro-start-btn" onclick="setPage('overview')">Start reading →</button>
+        <div class="intro-cta-pill">
+          <button class="intro-start-btn" onclick="setPage('overview')">Start reading →</button>
+        </div>
         <div class="intro-copyright">© 2026 MediaKit · LinkedIn Creator Network · Prepared exclusively for brand partners</div>
       </div>
     </section>
@@ -100,13 +102,15 @@
 
       <div class="tldr-grid">
         <!-- Card 01: The Network -->
-        <div class="tldr-card">
-          <div class="tldr-card-num">01</div>
-          <div class="tldr-card-title">The network</div>
-          <div style="margin-top:16px;padding:16px;background:var(--color-primary-soft);border-radius:var(--radius-sm);border-left:3px solid var(--color-primary);">
-            <div style="font-size:2rem;font-weight:800;color:var(--color-text);line-height:1;">21%</div>
-            <div style="font-size:0.75rem;color:var(--color-primary);font-weight:600;margin-top:3px;">of the audience are Founders &amp; C-suite</div>
-            <div style="font-size:0.75rem;color:var(--color-text-secondary);margin-top:8px;">240K+ followers · 59.7M impressions/year · SF · NYC · London</div>
+        <div class="tldr-card" style="display:flex;flex-direction:column;justify-content:space-between;">
+          <div>
+            <div class="tldr-card-num">01</div>
+            <div class="tldr-card-title">The network</div>
+            <div style="font-size:0.8rem;color:var(--color-text-secondary);line-height:1.5;margin-top:6px;">240K+ followers · 59.7M impressions/year · SF · NYC · London</div>
+          </div>
+          <div style="margin-top:24px;padding:20px;background:var(--color-primary-soft);border-radius:var(--radius-sm);border-left:3px solid var(--color-primary);">
+            <div style="font-size:3rem;font-weight:800;color:var(--color-primary);line-height:1;">21%</div>
+            <div style="font-size:0.75rem;color:var(--color-primary);font-weight:600;margin-top:6px;">of the audience are Founders &amp; C-suite</div>
           </div>
         </div>
 
@@ -136,7 +140,9 @@
       </div>
 
       <!-- Stat bar divider -->
-      <div style="display:flex;align-items:center;gap:0;margin:20px 0;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:12px 0;">
+      <div style="font-size:12px;opacity:0.5;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px;color:var(--color-text-tertiary);">Network at a glance</div>
+      <div style="background:rgba(0,0,0,0.02);border-radius:12px;padding:4px 0;">
+      <div style="display:flex;align-items:center;gap:0;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:12px 0;">
         <div style="flex:1;text-align:center;">
           <span style="font-size:0.9rem;font-weight:800;color:var(--color-text);">100M+</span>
           <span style="font-size:0.75rem;color:var(--color-text-secondary);margin-left:5px;">organic views</span>
@@ -151,6 +157,7 @@
           <span style="font-size:0.9rem;font-weight:800;color:var(--color-primary);">50%+</span>
           <span style="font-size:0.75rem;color:var(--color-text-secondary);margin-left:5px;">tech professionals</span>
         </div>
+      </div>
       </div>
 
       <div class="tldr-levers">
@@ -179,7 +186,7 @@
               </div>
               <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · Ex-Google · Ex-NVIDIA · Forbes 30u30</div>
             </div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);font-weight:600;display:block;width:100%;">View full profile →</div>
           </div>
           <div class="tldr-lever creator-nav-card" onclick="setPage('stanislav')" style="cursor:pointer;text-align:left;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
@@ -204,7 +211,7 @@
               </div>
               <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · ex-NVIDIA · Eng & AI audience</div>
             </div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);font-weight:600;display:block;width:100%;">View full profile →</div>
           </div>
           <div class="tldr-lever creator-nav-card" onclick="setPage('nikolai')" style="cursor:pointer;text-align:left;">
             <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
@@ -229,7 +236,7 @@
               </div>
               <div style="font-size:0.65rem;color:var(--color-text-tertiary);">YC W24 · Growth & product audience</div>
             </div>
-            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:10px;font-weight:600;">View full profile →</div>
+            <div style="font-size:0.65rem;color:var(--color-primary);margin-top:16px;padding-top:16px;border-top:1px solid var(--color-border);font-weight:600;display:block;width:100%;">View full profile →</div>
           </div>
         </div>
       </div>
@@ -276,7 +283,7 @@
           <div class="bar-label">Yurii Rebryk</div>
           <div class="bar-track">
             <div class="bar-fill accent" style="width:100%">
-              <span class="bar-inner-label">129,126</span>
+              
             </div>
           </div>
           <div class="bar-val">129K</div>
@@ -285,7 +292,7 @@
           <div class="bar-label">Stanislav Beliaev</div>
           <div class="bar-track">
             <div class="bar-fill mid" style="width:56%">
-              <span class="bar-inner-label">72,177</span>
+              
             </div>
           </div>
           <div class="bar-val">72K</div>
@@ -294,7 +301,7 @@
           <div class="bar-label">Nikolai Golos</div>
           <div class="bar-track">
             <div class="bar-fill low" style="width:30%">
-              <span class="bar-inner-label">38,926</span>
+              
             </div>
           </div>
           <div class="bar-val">39K</div>
