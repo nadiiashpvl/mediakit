@@ -137,14 +137,14 @@ a:hover { opacity: 0.8; }
 .page-stack { flex: 1; overflow: hidden; position: relative; }
 
 .page {
-  display: none; position: absolute; inset: 0;
+  display: none !important;
+  position: absolute; inset: 0;
   overflow-y: auto; padding: 40px 48px;
   scrollbar-width: thin; scrollbar-color: var(--color-border) transparent;
-  flex-direction: column;
 }
 .page.active {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   justify-content: flex-start;
   animation: fadeIn 0.25s ease-out;
 }
