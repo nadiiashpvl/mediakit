@@ -1074,10 +1074,10 @@ a:hover { opacity: 0.8; }
    ═══════════════════════════════════════ */
 
 /* Slide container: full height flex column */
+/* Creator pages use .page.active flex display — no separate display rule needed */
 #page-yurii,
 #page-stanislav,
 #page-nikolai {
-  display: flex;
   flex-direction: column;
   padding: 40px 48px 40px;
 }
