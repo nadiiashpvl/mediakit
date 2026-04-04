@@ -1062,58 +1062,82 @@ a:hover { opacity: 0.8; }
 }
 .page.active { animation: fadeIn 0.25s ease-out; }
 
-/* ── Analytics images: fill available height, no crop ── */
-.analytics-image-grid {
-  flex: 1;             /* expand to fill remaining slide height */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  min-height: 0;
-}
-.img-wrap {
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.06);
-  overflow: hidden;
-  background: var(--color-surface-2);
-  min-height: 0;
-  display: flex;
-}
-.img-wrap img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: contain;  /* full image, never crop */
-  object-position: top;
-}
-@media (max-width: 640px) {
-  .analytics-image-grid { grid-template-columns: 1fr; }
-}
 
-/* ── Creator pages: flex column so analytics fills remaining height ── */
+
+
+
+/* ═══════════════════════════════════════
+   CREATOR SLIDES — Figma-matched layout
+   ═══════════════════════════════════════ */
+
+/* Slide container: full height flex column */
 #page-yurii,
 #page-stanislav,
 #page-nikolai {
   display: flex;
   flex-direction: column;
+  padding: 40px 48px 40px;
 }
 
-#page-yurii .creator-hero,
-#page-stanislav .creator-hero,
-#page-nikolai .creator-hero {
+/* Header block: fixed height, no grow */
+#page-yurii .creator-header-block,
+#page-stanislav .creator-header-block,
+#page-nikolai .creator-header-block {
   flex-shrink: 0;
+  margin-bottom: 24px;
 }
 
-#page-yurii .section-label,
-#page-stanislav .section-label,
-#page-nikolai .section-label {
+/* Analytics section: fills all remaining vertical space */
+#page-yurii .analytics-section,
+#page-stanislav .analytics-section,
+#page-nikolai .analytics-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Analytics label */
+#page-yurii .analytics-section .analytics-label,
+#page-stanislav .analytics-section .analytics-label,
+#page-nikolai .analytics-section .analytics-label {
   flex-shrink: 0;
-  margin-top: 16px;  /* tighter gap between hero and analytics */
-  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
 }
 
-/* Reduce slide bottom padding so images reach further down */
-#page-yurii,
-#page-stanislav,
-#page-nikolai {
-  padding-bottom: 32px;
+/* Image grid: fills remaining space in analytics section */
+.analytics-image-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  min-height: 0;
+}
+
+/* Image containers */
+.img-wrap {
+  background: #f5f5f7;
+  border-radius: 12px;
+  border: 0.5px solid rgba(0,0,0,0.06);
+  overflow: hidden;
+  min-height: 0;
+}
+
+/* Images: fill container, show top-left content (most important part) */
+.img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .analytics-image-grid { grid-template-columns: 1fr; }
+  #page-yurii, #page-stanislav, #page-nikolai { padding: 20px 16px 80px; }
 }
