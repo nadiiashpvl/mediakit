@@ -1115,11 +1115,11 @@ a:hover { opacity: 0.8; }
 
 /* Image grid: fills remaining space in analytics section */
 .analytics-image-grid {
-  flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  min-height: 0;
+  align-items: start;   /* top-align — different heights look intentional */
+  margin-top: 8px;
 }
 
 /* Image containers */
