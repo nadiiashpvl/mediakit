@@ -973,3 +973,91 @@ a:hover { opacity: 0.8; }
   margin-bottom: 8px;
 }
 .campaign-total strong { color: var(--color-text); font-weight: 600; }
+
+/* ═══════════════════════════════════════
+   Fixes 16–23
+   ═══════════════════════════════════════ */
+
+/* ── Fix 18: Recommended badge on pricing card ── */
+.pricing-card-recommended {
+  border: 1.5px solid var(--color-primary) !important;
+}
+.pricing-recommended-badge {
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  font-size: 10px;
+  font-weight: 600;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ── Fix 19: Pricing checklist ── */
+.pricing-checklist {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+.pricing-checklist li {
+  position: relative;
+  padding: 5px 0 5px 22px;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+.pricing-checklist li::before {
+  content: "✓";
+  color: var(--color-primary);
+  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* ── Fix 21: Sidebar collapse on tablet ── */
+@media (max-width: 1024px) and (min-width: 641px) {
+  .sidebar {
+    width: 56px;
+    min-width: 56px;
+  }
+  .sidebar-kicker { display: none; }
+  .nav-label { display: none; }
+  .nav-btn {
+    justify-content: center;
+    padding: 7px;
+    gap: 0;
+  }
+  .nav-num {
+    width: 22px;
+    height: 22px;
+    font-size: 0.6rem;
+  }
+  .sidebar-footer { display: none; }
+}
+
+/* ── Fix 22: Bottom nav only on mobile, sidebar only on desktop/tablet ── */
+.mobile-nav { display: none; }
+
+@media (max-width: 640px) {
+  .sidebar { display: none; }
+  .mobile-nav { display: flex; }
+  .page { padding: 20px 16px 100px; }
+}
+
+/* ── Fix 23: Scroll-snap for slide transitions ──
+   Note: pages use position:absolute stack — scroll-snap applies to overflow:auto containers */
+.page-stack {
+  scroll-snap-type: none; /* stack navigation, not scroll */
+}
+/* Each page already fills the stack viewport via position:absolute inset:0 */
+/* Keyboard arrow nav already handles slide transitions */
+/* Adding transition to fadeIn for smoother feel */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.page.active { animation: fadeIn 0.25s ease-out; }
