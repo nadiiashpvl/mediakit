@@ -140,11 +140,14 @@ a:hover { opacity: 0.8; }
   display: none; position: absolute; inset: 0;
   overflow-y: auto; padding: 40px 48px;
   scrollbar-width: thin; scrollbar-color: var(--color-border) transparent;
-  animation: fadeIn 0.2s ease;
-  /* Flex column so content can distribute vertically */
   flex-direction: column;
 }
-.page.active { display: flex; }
+.page.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: fadeIn 0.25s ease-out;
+}
 .page::-webkit-scrollbar { width: 4px; }
 .page::-webkit-scrollbar-track { background: transparent; }
 .page::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
@@ -749,9 +752,9 @@ a:hover { opacity: 0.8; }
   font-weight: 700;
 }
 
-/* Center the whole grid vertically inside the page */
+/* Pricing: flex column, items fill proportionally */
 #page-pricing {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Page header shrinks to minimum on pricing */
@@ -1060,7 +1063,7 @@ a:hover { opacity: 0.8; }
   from { opacity: 0; transform: translateY(6px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-.page.active { animation: fadeIn 0.25s ease-out; }
+/* fadeIn animation already in .page definition */
 
 
 
