@@ -877,3 +877,99 @@ a:hover { opacity: 0.8; }
 /* ── Fix 9: Bar track — clean without inner labels ── */
 .bar-fill { padding-left: 0; }
 .bar-fill.accent { justify-content: flex-start; }
+
+/* ═══════════════════════════════════════
+   Fixes 9–16
+   ═══════════════════════════════════════ */
+
+/* ── Fix 10: Audience composition bars ── */
+.audience-comp-section {
+  margin-top: 24px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 20px;
+}
+.audience-comp-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.audience-comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.audience-col-title {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 12px;
+}
+.audience-bar { margin-bottom: 10px; }
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  margin-bottom: 5px;
+  color: var(--color-text-secondary);
+}
+.bar-label span:first-child { opacity: 0.7; }
+.bar-label span:last-child { font-weight: 600; color: var(--color-text); }
+.audience-track {
+  height: 6px;
+  background: var(--color-border-light);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.audience-fill {
+  height: 100%;
+  border-radius: 3px;
+  opacity: 0.85;
+  transition: width 0.6s ease;
+}
+
+/* ── Fix 11: KPI row 2×2 on mobile ── */
+@media (max-width: 640px) {
+  .kpi-row { grid-template-columns: 1fr 1fr; }
+  .audience-comp-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Fix 12 & 13: Creator analytics images with consistent aspect-ratio ── */
+.analytics-image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.analytics-image-grid .img-container {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+}
+.analytics-image-grid .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 640px) {
+  .analytics-image-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Fix 15: Campaign combined total bar ── */
+.campaign-total {
+  background: rgba(124, 58, 237, 0.06);
+  border: 1px solid rgba(124, 58, 237, 0.15);
+  border-radius: 8px;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.campaign-total strong { color: var(--color-text); font-weight: 600; }
