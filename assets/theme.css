@@ -1061,3 +1061,17 @@ a:hover { opacity: 0.8; }
   to   { opacity: 1; transform: translateY(0); }
 }
 .page.active { animation: fadeIn 0.25s ease-out; }
+
+/* ── Analytics images: no crop, full image visible ── */
+.img-wrap {
+  border-radius: 12px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  background: var(--color-surface-2);
+}
+.img-wrap img {
+  width: 100%;
+  height: auto;        /* natural height — no cropping */
+  display: block;
+  object-fit: contain; /* show full image */
+}
