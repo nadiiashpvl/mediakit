@@ -694,3 +694,99 @@ a:hover { opacity: 0.8; }
 
 /* Prevent overflow on flex children */
 /* flex-shrink: 0 not needed — page justify-content:center handles distribution */
+
+/* ═══════════════════════════════════════
+   PRICING PAGE — vertical layout fix
+   ═══════════════════════════════════════ */
+
+/* Override the horizontal 2-col grid → single column vertical */
+.pricing-grid-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Each pricing card spans full width, scales height with content */
+.pricing-grid-vertical .pricing-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;             /* Horizontal layout INSIDE card */
+  align-items: flex-start;
+  gap: 32px;
+  padding: 28px 36px;
+}
+
+/* Left: tier label + name + price */
+.pricing-grid-vertical .pricing-card-left {
+  flex: 0 0 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Right: items + CTA */
+.pricing-grid-vertical .pricing-card-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Bigger price in vertical layout */
+.pricing-grid-vertical .pricing-price {
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 8px 0 4px;
+}
+
+/* Bigger name */
+.pricing-grid-vertical .pricing-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Center the whole grid vertically inside the page */
+#page-pricing {
+  justify-content: center;
+}
+
+/* Page header shrinks to minimum on pricing */
+#page-pricing .page-header {
+  margin-bottom: 16px;
+}
+
+/* Pricing items in vertical layout */
+.pricing-grid-vertical .pricing-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.pricing-grid-vertical .pricing-item {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* CTA button full width in right column */
+.pricing-grid-vertical .pricing-cta-btn {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Vertical divider between left and right sections */
+.pricing-grid-vertical .pricing-card::before {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  height: auto;
+}
+
+/* Featured card: stronger left accent */
+.pricing-grid-vertical .pricing-card.featured {
+  border-left-width: 3px;
+}
