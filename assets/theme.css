@@ -1062,17 +1062,58 @@ a:hover { opacity: 0.8; }
 }
 .page.active { animation: fadeIn 0.25s ease-out; }
 
-/* ── Analytics images: side-by-side, no crop, capped height ── */
+/* ── Analytics images: fill available height, no crop ── */
+.analytics-image-grid {
+  flex: 1;             /* expand to fill remaining slide height */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  min-height: 0;
+}
 .img-wrap {
   border-radius: 12px;
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(0,0,0,0.06);
   overflow: hidden;
   background: var(--color-surface-2);
+  min-height: 0;
+  display: flex;
 }
 .img-wrap img {
   width: 100%;
-  max-height: 220px;   /* smaller so both fit in one line */
+  height: 100%;
   display: block;
-  object-fit: contain; /* full image, no cropping */
-  object-position: top; /* align to top so content is visible */
+  object-fit: contain;  /* full image, never crop */
+  object-position: top;
+}
+@media (max-width: 640px) {
+  .analytics-image-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Creator pages: flex column so analytics fills remaining height ── */
+#page-yurii,
+#page-stanislav,
+#page-nikolai {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-yurii .creator-hero,
+#page-stanislav .creator-hero,
+#page-nikolai .creator-hero {
+  flex-shrink: 0;
+}
+
+#page-yurii .section-label,
+#page-stanislav .section-label,
+#page-nikolai .section-label {
+  flex-shrink: 0;
+  margin-top: 16px;  /* tighter gap between hero and analytics */
+  margin-bottom: 8px;
+}
+
+/* Reduce slide bottom padding so images reach further down */
+#page-yurii,
+#page-stanislav,
+#page-nikolai {
+  padding-bottom: 32px;
 }
